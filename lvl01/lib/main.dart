@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
                   style: TextStyle(fontSize: 20),
                 ),
                 onTap: () {
-                  debugPrint('tapped-$index');
+                  debugPrint('you tapped-$index');
                   //////////////////////////////// call another page
                   Navigator.push(
                     context,
@@ -55,13 +55,10 @@ class _MyAppState extends State<MyApp> {
 
 ///
 /// below is another page
-///
+/// take note in constructor-this month
 class MyDetails extends StatelessWidget {
   final String? month;
-  const MyDetails(
-    String this.month, {
-    Key? key,
-  }) : super(key: key);
+  const MyDetails(String this.month, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
